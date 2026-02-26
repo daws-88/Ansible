@@ -1,0 +1,22 @@
+{
+    "name": "sai kumar",
+    "DOB": "6-12-1998",
+    "age": 27,
+    "addresses": [
+        {
+            "typr": "per",
+            "doorno": "1-46",
+            "stret": "kamla nagar",
+            "city": "HYD",
+            "PIN": 5021578
+        },
+        {
+            "typr": "per",
+            "doorno": "1-46",
+            "stret": "kamla nagar",
+            "city": "HYD",
+            "PIN": 5021578
+        }
+    ],
+    "Skills": ["java", "linux", "cloud", "gcp"]
+}
