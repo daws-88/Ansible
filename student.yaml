@@ -1,0 +1,23 @@
+- name: "sai kumar"
+  age: 28
+  dob: "6-12-1788"
+  addresses:
+   - type: per
+     doorno: "10-87"
+     strret: "kamala nagar"
+     city: hyd
+     pin: 4548956
+     
+   - type: cur
+     doorno: "10-87"
+     strret: "kamala nagar"
+     city: hyd
+     pin: 4488
+  skills:
+  - java
+  - clod
+  - aws
+  
+ -
+    
+
