@@ -1,0 +1,29 @@
+   <!-- list of students -->
+   <students>
+   <!-- object --> 
+    <student>
+        <name>sai</name>
+        <DOB>6-8-1997</DOB>
+        <age>28</age>
+        <!-- list of object -->
+        <addresses>
+            <!-- object -->
+            <address type="PER">
+            <door>12</door>
+            <strret>bharath nagar</street>
+            <city>chennai</city>
+            </address>
+            <address type="CUR">
+            <door>12</door>
+            <strret>bharath nagar</street>
+            <city>chennai</city>
+            </address>
+        </addresses>
+        <!-- list of string -->
+        <skills>
+            <skill>java</skill>
+            <skill>python</skill>
+            <skill>aws</skill>
+        </skills>
+    </student>
+</students>
