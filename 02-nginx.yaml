@@ -1,5 +1,5 @@
 - name: install and start nginx
-  host: frontend
+  hosts: frontend
   become: yes
   tasks:
   - name: install nginx
@@ -10,5 +10,5 @@
   - name: start nginx
     ansible.builtin.service:
       name: nginx
-      state: strated
+      state: started
       enabled: yes
