@@ -1,10 +1,6 @@
-- name: play variables
+- name: varas args
   hosts: local
   connection: local # ansible is connecting to localhost
-  vars:  #play vars
-    COURSE: ansible
-    DURATION: 120 hrs
-    TRAINER: Shiva kumar
   tasks:
   - name: print the course info
     ansible.builtin.debug:
