@@ -11,7 +11,7 @@
    - aws
    concepts: # Dictionary or map
     cloud: aws
-    cloud: gcp
+    infometca: gcp
   tasks:
     - name: print the course info
       ansible.builtin.debug:
