@@ -1,0 +1,21 @@
+- name: Task variables
+  hosts: local
+  connection: local
+  vars:
+   course: "Devops with Aws"
+   Duration: 120
+   is_live: true
+   Tools:    # ["linux", "devops", "aws"]
+   - linux
+   - Devops
+   - aws
+   concepts: # Dictionary or map
+    cloud: aws
+    cloud: gcp
+  tasks:
+    - name: print the course info
+      ansible.builtin.debug:
+        msg: "Course name is : {{ Course }} Duration is: {{ Duration }}, is it live: {{ is_live }}, Tools is: {{ Tools }}, concepts are: {{ concepts }}"
+
+# list []
+# map {}
