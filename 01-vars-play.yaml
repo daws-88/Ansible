@@ -2,7 +2,7 @@
   hosts: local
   connection: local # ansible is connecting to localhost
   vars:  #play vars
-    COURSE: ansible
+    COURSE: Devops
     DURATION: 120 hrs
     TRAINER: Shiva kumar
   tasks:
