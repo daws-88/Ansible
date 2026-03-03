@@ -12,7 +12,7 @@
   tasks:
   - name: Testing var perferance
     vars:
-    NAME: from play level
+      NAME: from play level
     ansible.builtin.debug:
       msg: "name: {{ NAME }}"
   
