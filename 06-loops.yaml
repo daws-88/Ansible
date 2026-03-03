@@ -4,8 +4,8 @@
   tasks:
   - name: print names
     ansible.builtin.debug:
-      msg: "{{ item }}"
-    loops:
+      msg: " Hello {{ item }}" # itewm is reserved 
+    loop:
     - samson
     - dravid
     - arshadeep
