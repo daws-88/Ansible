@@ -11,6 +11,8 @@
     private: false
   tasks:
   - name: test preferance
+    vars:
+      NAME: From tasks
     ansible.builtin.debug:
       msg: "name is: {{ NAME }}"
   
