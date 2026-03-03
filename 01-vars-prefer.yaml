@@ -1,18 +1,16 @@
-- name: vars prefer 
+- name: variable preferance
   hosts: local
   connection: local
   vars:
     NAME: from play level
-  vars_file:
-  - course.yaml
+  vars_files:
+  - Course.yaml
   vars_prompt:
-  - name: NAME?
-    prompt: What is your NAME?
+  - name: NAME
+    prompt: what is your NAME?
     private: false
   tasks:
-  - name: Testing var perferance
-    vars:
-      NAME: from play level
+  - name: test preferance
     ansible.builtin.debug:
-      msg: "name: {{ NAME }}"
+      msg: "name is: {{ NAME }}"
   
