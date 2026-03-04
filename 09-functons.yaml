@@ -4,7 +4,7 @@
   vars:
     name: venkatsai
     gmail: psAI96526@GMAil.com
-    ipaddress: "345.755.555.1"
+    ipaddress: "172.31.67.242"
     technologies: devops, linux, azure # string
     tags: # map  or dictionary 
       Application: payment
