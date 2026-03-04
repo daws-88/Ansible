@@ -1,0 +1,50 @@
+- name: functions
+  hosts: local
+  connection: 
+  vars:
+    technologies: devops, linux, azure # string
+    tags: # map  or dictionary 
+      Application: payment
+      Environment: dev
+    listtags:
+      - key: Application
+        value: payment
+      - key: Environment
+        value: dev
+  tasks:
+  - name: default variable
+    ansible.builtin.debug:
+      msg: "name is: {{ name | default('Rohith') }}"
+
+  - name: convert string to list
+    ansible.builtin.debug:
+      msg: "technologies are: {{ technologies | split(',') }}"
+
+  - name: convert map to list
+    ansible.builtin.debug:
+      msg: "tags are: {{ tags | dict2items }}"
+
+  - name: convert list to map 
+    ansible.builtin.debug:
+      msg: "list tags are: {{ listtags | items2dict }}"
+
+  - name : read yaml file and take it into variables
+    ansible.builtin.set_fact:
+      my_data: "{{ lookup('file', 'student.yaml') | from_yaml }}"
+
+  - name: convert yaml into json
+    ansible.builtin.debug:
+      msg: "json format is:{{ my_data | to_json }}"
+
+  - name: save json as file
+    ansible.builtin.copy:
+      dest: ./data.json
+      content: "{{ my_data | to_nice_json  }}"
+
+
+
+
+
+  
+
+  
