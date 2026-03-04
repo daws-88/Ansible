@@ -2,6 +2,8 @@
   hosts: local
   connection: local 
   vars:
+    name: venkatsai
+    gmail: psAI96526@GMAil.com
     technologies: devops, linux, azure # string
     tags: # map  or dictionary 
       Application: payment
@@ -40,6 +42,18 @@
     ansible.builtin.copy:
       dest: ./data.json
       content: "{{ my_data | to_nice_json  }}"
+
+  - name: convert name into uppercase
+    ansible.builtin.debug:
+      msg: "name is: {{ name | upper }}"
+
+  - name: convert name into lowercase
+    ansible.builtin.debug:
+      msg: "gmail is: {{ gmail | lower }}"
+
+
+
+  
 
 
 
