@@ -1,4 +1,4 @@
-- name: varas args
+- name: condition check by ansible
   hosts: local
   connection: local # ansible is connecting to localhost
   vars:
