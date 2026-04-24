@@ -82,25 +82,4 @@
     ansible.builtin.debug:
       msg: "{{ redirect_output }}"
   
-
-
-  
-
-  
-  
-
-
-  
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
+# we use inbuilt functions
