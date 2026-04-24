@@ -3,7 +3,7 @@
   connection: local
   become: yes
   tasks:
-  - name: print names
+  - name: innstall package
     ansible.builtin.package:
       name: "{{ item  }}"
       state: latest
